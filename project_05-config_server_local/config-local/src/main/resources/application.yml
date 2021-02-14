@@ -1,7 +1,0 @@
-server:
-  port: 8090
-
-spring:
-  profiles:
-    active: native
-    #this means that the config files are stored locally
