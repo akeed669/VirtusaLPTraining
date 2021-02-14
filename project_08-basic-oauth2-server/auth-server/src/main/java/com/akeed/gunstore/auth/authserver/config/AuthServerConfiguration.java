@@ -33,7 +33,9 @@ public class AuthServerConfiguration extends WebSecurityConfigurerAdapter
 
     @Override
     public void configure(ClientDetailsServiceConfigurer client) throws Exception {
-        client.inMemory().withClient("android").secret(passwordEncoder.encode("androidpass")).scopes("READ", "WRITE").authorizedGrantTypes("password", "authorization_code");
+        client.inMemory().withClient("android").secret(passwordEncoder
+                .encode("androidpass")).scopes("READ", "WRITE")
+                .authorizedGrantTypes("password", "authorization_code");
 
     }
 

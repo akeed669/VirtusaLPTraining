@@ -14,6 +14,6 @@ public class UserConfiguration extends GlobalAuthenticationConfigurerAdapter {
     @Override
     public void init(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication().withUser("akeed").password(passwordEncoder.encode("akeedpass")).roles("USER","ADMIN","MANAGER").authorities("CAN_READ","CAN_WRITE","CAN_DESTROY").
-                and().withUser("thaqeeb").password(passwordEncoder.encode("tuckpass")).roles("USER").authorities("CAN_READ","CAN_WRITE");
+                and().withUser("sammy").password(passwordEncoder.encode("sampass")).roles("USER").authorities("CAN_READ","CAN_WRITE");
     }
 }
