@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: firearm
+
+  jpa:
+    hibernate:
+      ddl-auto: update

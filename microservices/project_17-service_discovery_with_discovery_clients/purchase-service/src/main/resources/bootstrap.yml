@@ -1,0 +1,19 @@
+#  spring:
+#    cloud:
+#      config:
+#        uri: http://localhost:8090
+
+spring:
+  application:
+    name: purchase
+
+server:
+  port: 0
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+    hostname: localhost
